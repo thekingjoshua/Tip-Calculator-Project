@@ -1,0 +1,233 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	font-family: Arial;
+}
+body {
+	background-color: var(--light-grayish-cyan);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	margin: 5rem 0;
+}
+:root {
+	--strong-cyan: hsl(172, 67%, 45%);
+	--very-dark-cyan: hsl(183, 100%, 15%);
+	--dark-grayish-cyan: hsl(186, 14%, 43%);
+	--grayish-cyan: hsl(184, 14%, 56%);
+	--light-grayish-cyan: hsl(185, 41%, 84%);
+	--very-light-cyan: hsl(189, 41%, 97%);
+	--white: hsl(0, 0%, 100%);
+}
+button,
+input {
+	cursor: pointer;
+}
+.container {
+	background-color: var(--very-light-cyan);
+	height: 110vh;
+	width: 100%;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 2rem 2rem 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem;
+	margin: 13rem 0 0 0;
+}
+
+form h2 {
+	display: block;
+	font-size: 1.5rem;
+}
+form input {
+	padding: 1rem;
+	text-align: right;
+	margin: 1.5rem 0 2rem 0;
+	width: 100%;
+	background-color: var(--light-grayish-cyan);
+	border: none;
+	outline: none;
+	border-radius: 0.5rem;
+	font-weight: 900;
+	font-size: 1.7rem;
+	color: var(--very-dark-cyan);
+}
+img.dollar {
+	position: absolute;
+	top: 5.3rem;
+	left: 3rem;
+}
+.buttons__container {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 0.5rem;
+	row-gap: 0.5rem;
+	padding: 0.5rem;
+}
+.buttons__container button {
+	width: 100%;
+	height: 5vh;
+	background-color: var(--very-dark-cyan);
+	border: none;
+	border-radius: 0.5rem;
+	color: var(--white);
+	font-size: 1.6rem;
+}
+.buttons__container button:hover {
+	background-color: var(--strong-cyan);
+}
+.buttons__container button:last-child {
+	background-color: var(--light-grayish-cyan);
+	color: var(--very-dark-cyan);
+}
+img.person {
+	position: absolute;
+	top: 18rem;
+	left: 2.8rem;
+}
+form:last-child {
+	position: relative;
+}
+.calculator h2 {
+	margin: 2.5rem 0 1rem 0;
+}
+.result {
+	background-color: var(--very-dark-cyan);
+	width: 100%;
+	height: 30vh;
+	border-radius: 1rem;
+	padding: 3rem 3rem;
+}
+.result div.first,
+.result div.second {
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem 0 0 0;
+}
+.result div.first div h2,
+.result div.second div h2 {
+	color: var(--white);
+	font-size: 1.5rem;
+}
+.result div.first div h4,
+.result div.second div h4 {
+	color: var(--dark-grayish-cyan);
+	margin-top: 0.5rem;
+	font-size: 1rem;
+}
+.result div.first div h3,
+.result div.second div h3 {
+	font-size: 2rem;
+	color: var(--strong-cyan);
+}
+.result .reset {
+	width: 100%;
+	height: 5vh;
+	border: none;
+	background-color: var(--strong-cyan);
+	border-radius: 0.5rem;
+	color: var(--very-dark-cyan);
+	font-weight: 800;
+	margin: 2.5rem 0 0 0;
+}
+.result .reset:hover {
+	background-color: var(--strong-cyan);
+}
+.attribution {
+	position: absolute;
+	bottom: 7%;
+}
+.attribution a {
+	color: var(--very-dark-cyan);
+    text-decoration: none;
+}
+@media only screen and (min-width: 360px) {
+	.container {
+		margin: 15rem 0 0 0;
+		height: 100vh;
+	}
+	form input {
+		margin: 1.5rem 0 0 0;
+	}
+	img.person {
+		position: absolute;
+		bottom: -3.5rem;
+		left: 0.5rem;
+	}
+	img.person {
+		position: absolute;
+		top: 16rem;
+		left: 2.8rem;
+	}
+}
+@media only screen and (min-width: 360px) {
+}
+@media only screen and (min-width: 1024px) {
+	.container {
+		height: 65vh;
+		width: 80%;
+		flex-direction: row;
+		margin: 0;
+	}
+	form h2 {
+		display: block;
+		font-size: 1.5rem;
+	}
+	form input {
+		margin: 1.5rem 0 0 0;
+		width: 47rem;
+	}
+	img.dollar {
+		position: absolute;
+		top: 5.3rem;
+		left: 3rem;
+	}
+	img.person {
+		position: absolute;
+		top: 16rem;
+		left: 2.8rem;
+	}
+	form:last-child {
+		position: relative;
+	}
+	.calculator h2 {
+		margin: 2.5rem 0 1rem 0;
+	}
+	.result {
+		width: 50%;
+		height: 54vh;
+		padding: 5rem 3rem;
+	}
+	.result div.first,
+	.result div.second {
+		display: flex;
+		justify-content: space-between;
+		margin: 3rem 0;
+	}
+	.result div.first div h2,
+	.result div.second div h2 {
+		color: var(--white);
+		font-size: 1.6rem;
+	}
+	.result div.first div h4,
+	.result div.second div h4 {
+		font-size: 1.3rem;
+	}
+	.result div.first div h3,
+	.result div.second div h3 {
+		font-size: 4rem;
+	}
+	.result .reset {
+		margin: 5rem 0 0 0;
+	}
+}
